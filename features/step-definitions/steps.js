@@ -15,8 +15,7 @@ When(/^I login with (.+) and (.+)$/, (email, password) => {
 //     LoginPage.login(username, password)
 // });
 
-Then(/^I should see a flash message saying (.*)$/, (message) => {
-    expect(SecurePage.flashAlert).toBeExisting();
-    expect(SecurePage.flashAlert).toHaveTextContaining(message);
+Then(/^I should see the main page with all posts$/, () => {
+    expect(browser).toHaveTitle('My profile | ThinkMobiles')
 });
 
