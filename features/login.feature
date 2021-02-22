@@ -1,10 +1,10 @@
-Feature: The Internet Guinea Pig Website
-  Test scenario from box
-  Scenario Outline: As a user, I can log into the secure area
+Feature: The ThinkMobiles Website
+
+  Scenario Outline: As a user, I can log into the website
 
     Given I am on the login page
     When I login with <email> and <password>
-    Then I should see the main page with all posts
+    Then I should see the main page with My profile
 
     Examples:
       | email                 | password  |
