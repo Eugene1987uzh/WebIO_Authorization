@@ -22,7 +22,9 @@ Then(/^I should see the main page with My profile$/, () => {
 });
 
 Then(/^User see (.+) error$/, (message) => {
-const erMesage=$(`.input-error=${message}`)
+const erMesage=$(`.input-error*=${message}`)
     expect(erMesage)
-    .toHaveText(message)
+    // .toHaveText(message)
+    .toHaveTextContaining(message)
+
 });
