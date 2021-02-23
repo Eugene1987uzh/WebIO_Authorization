@@ -15,6 +15,11 @@ When(/^I click on (.+)$/, (link) => {
     MYlink.click()
 });
 
+When(/^As a user, I click on (.+)$/, (link) => {
+    const MYlink=$(`=${link}`)
+    MYlink.click()
+});
+
 When(/^I login with (.+) and (.+)$/, (email, password) => {
     LoginPage.login(email, password)
 });
