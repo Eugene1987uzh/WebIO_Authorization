@@ -18,7 +18,7 @@ exports.config = {
     //
     specs: [
         // './features/**/*.feature'
-        './features/LinksCheker.feature'
+        './features/notValidLogin.feature'
 
     ],
     // Patterns to exclude.

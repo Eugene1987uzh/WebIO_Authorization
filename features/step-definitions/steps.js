@@ -37,6 +37,12 @@ Then(/^I should see the new page with (.*)$/, (title) => {
     expect(browser).toHaveTitleContaining(`${title}`)
 });
 
+Then(/^I click on chekbox Stay logged in$/, () => {
+
+    const MYlink=$('.contact-us__checkbox-label')
+    MYlink.click()
+});
+
 
 Then(/^Login button is disabled$/, () => {
     const loginBUTTON=$('.sign_up-submit')
